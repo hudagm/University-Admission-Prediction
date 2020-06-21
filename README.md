@@ -19,7 +19,7 @@ Dataset used in this task ('Admission_Predict.csv') is from https://www.kaggle.c
 - Undergraduate GPA (out of 10)
 - Research Experience (either 0 or 1)
 ### Output
-Chance of Admit (ranging from 0 to 1)
+- Chance of Admit (ranging from 0 to 1)
 
 ## Models Used
 Artificial Neural Network, Decison Tree, Random Forest, and Linear Regressor.
