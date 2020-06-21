@@ -9,7 +9,7 @@ Using the supplied predictive variables (GRE score, TOEFL score, University Rati
 - Used the model to predict on new data to evaluate the possibility of a student getting into a university
 
 ## Data
-Dataset used in this task is from https://www.kaggle.com/mohansacharya/graduate-admissions. The dataset contains several parameters which are considered important during the application for Masters Programs.
+Dataset used in this task ('Admission_Predict.csv') is from https://www.kaggle.com/mohansacharya/graduate-admissions. The dataset contains several parameters which are considered important during the application for Masters Programs.
 ### Input
 - GRE Scores (out of 340)
 - TOEFL Scores (out of 120)
