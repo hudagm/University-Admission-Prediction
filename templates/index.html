@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Predictor</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">University Admission Prediction</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Fill in the fields below to see the likelihood of you getting into the graduate school
+        <br>
+        </h5>
+    </div>
+
+    <div class="row">
+        <form action='/predict' method="post" class="col s12">
+            <div class="row">
+                <div class="input-field col s4">
+                    <label for="gre"><b>GRE Score</b></label>
+                    <br>
+                    <input id="gre" placeholder="GRE Score(out of 340)" name="gre" type="text" class="validate">
+                </div>
+
+
+                <div class="input-field col s4">
+                    <label for="toefl"><b>TOEFL Score</b></label>
+                        <br>
+                    <input id="toefl" name="toefl" placeholder="TOEFL Score(out of 120)" type="text" class="validate">
+                </div>
+
+
+                <div class="input-field col s4">
+                    <label for="unirating"><b>University Rating</b></label>
+                    <br>
+                    <input id="unirating" name="unirating" placeholder="University Rating(out of 5)" type="text" class="validate">
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="input-field col s3">
+                    <label for="sop"><b>SOP</b></label>
+                    <br>
+                    <input id="sop" name="sop" placeholder="SOP(out of 5)" type="text" class="validate">
+                </div>
+
+                <div class="input-field col s3">
+                    <label for="lor"><b>LOR</b></label>
+                    <br>
+                    <input id="lor" name="lor" placeholder="LOR(out of 5)" type="text" class="validate">
+                </div>
+
+
+                <div class="input-field col s3">
+                    <label for="cgpa"><b>CGPA</b></label>
+                        <br>
+                    <input id="cgpa" name="cgpa" placeholder="CGPA(out of 10)" type="text" class="validate">
+                </div>
+
+
+                <div class="input-field col s3">
+                    <label for="research"><b>Research</b></label>
+                    <br>
+                    <input id="research" name="research" placeholder="Research(1 or 0)" type="text" class="validate">
+                </div>
+
+            </div>
+
+
+            <div class="row center">
+                <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+            </div>
+        </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+            <h6 class="white-text">Data Analysis : Find the all the EDA done on this problem over on my<a href="https://github.com/hudagm/University-Admission-Prediction" class ="white-text"> <u>GitHub</u></a></h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
