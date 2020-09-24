@@ -1,5 +1,6 @@
 # University Admission Prediction
-Using the supplied predictive variables (GRE score, TOEFL score, University Rating, etc) to predict the likelihood of admission of a new candidate aspiring for graduate schools.
+Using the supplied predictive variables (GRE score, TOEFL score, University Rating, etc) to predict the likelihood of admission of a new candidate aspiring for graduate schools. 
+Deployed on Heroku: https://uni-admission-predict.herokuapp.com/
 
 ## Tasks 
 - Exploratory Data Analysis (EDA)
